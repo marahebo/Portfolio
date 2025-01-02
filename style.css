@@ -1,0 +1,54 @@
+body {
+  background: #fff5e5;
+  border: solid #a79f92;
+  border-width: 1px;
+}
+
+html {
+  background: #f7e7cf;
+}
+
+header,
+main,
+footer {
+  border: solid #a79f92;
+  border-width: 1px;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 350;
+  font-size: 45px;
+}
+
+h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 350;
+  text-align: center;
+}
+
+.col .default {
+  display: block;
+}
+
+.col .hover {
+  display: none;
+}
+
+.col:hover .default {
+  display: none;
+}
+
+.col:hover .hover {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 110px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+}

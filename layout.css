@@ -1,0 +1,102 @@
+body {
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: -6px;
+  margin-bottom: -6px;
+}
+
+.grid_1-1 img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #a79f92;
+  object-fit: contain;
+}
+
+.grid_1-1-1 {
+  display: none;
+}
+footer {
+  padding: 35px;
+}
+
+.footer_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#burger-toggle {
+  display: none;
+}
+
+#burger-toggle:checked + label + nav ul {
+  display: block;
+  font-size: 25px;
+}
+
+.burger-menu {
+  display: block;
+  font-size: 49px;
+}
+
+nav ul {
+  display: none;
+}
+
+#burger-toggle:checked + label {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .grid_1-1 {
+    display: none;
+  }
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid_1-1-1 img {
+    width: 100%;
+  }
+
+  body {
+    margin: 30px;
+  }
+  nav {
+    position: relative;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav a {
+    color: black;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 350;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0.3em;
+    transition: color 0.5s ease, transform 0.5s ease;
+  }
+  nav a:hover {
+    color: grey;
+  }
+  .burger-menu {
+    display: none;
+    cursor: pointer;
+  }
+}
