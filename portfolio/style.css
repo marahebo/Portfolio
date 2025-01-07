@@ -1,0 +1,257 @@
+* {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(1px);
+    background-color: rgba(118, 118, 118, 0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: transparent;
+  }
+}
+
+html {
+  animation: fadeIn 1s ease-in-out;
+}
+
+body {
+  background: #f6f7f3;
+}
+
+.index h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 350;
+  text-align: center;
+  color: black;
+}
+
+.footer h4:hover {
+  font-size: 17.1px;
+  color: #99bbe1;
+}
+
+.footer a {
+  color: black;
+}
+
+.footer a:hover {
+  color: #99bbe1;
+}
+
+.index h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+}
+
+.col1 h2,
+.col4 h2,
+.col55 h2 {
+  color: white;
+}
+.col2 h2,
+.col3 h2,
+.col5 h2 {
+  color: black;
+}
+
+.col1:hover,
+.col2:hover,
+.col3:hover,
+.col4:hover,
+.col5:hover,
+.col55:hover {
+  margin: 0px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col55 {
+  position: relative; /* Ensure the parent is a positioning context */
+  overflow: hidden; /* Prevents overflow from breaking layout */
+}
+
+.col1 .static-img,
+.col2 .static-img,
+.col3 .static-img,
+.col4 .static-img,
+.col5 .static-img,
+.col55 .static-img {
+  display: block; /* Image is visible by default */
+  width: 100%;
+  height: auto;
+  position: relative; /* Image stays within parent */
+  z-index: 1; /* Ensure the image is above the video by default */
+}
+
+.col1 .hover-video,
+.col2 .hover-video,
+.col3 .hover-video,
+.col4 .hover-video,
+.col5 .hover-video,
+.col55 .hover-video {
+  display: none; /* Hidden by default */
+  position: absolute; /* Video overlaps the image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio */
+  z-index: 2; /* Video sits above the image on hover */
+}
+
+.col1:hover .static-img,
+.col2:hover .static-img,
+.col3:hover .static-img,
+.col4:hover .static-img,
+.col5:hover .static-img,
+.col55:hover .static-img {
+  display: none; /* Hides the image on hover */
+}
+
+.col1:hover .hover-video,
+.col2:hover .hover-video,
+.col3:hover .hover-video,
+.col4:hover .hover-video,
+.col5:hover .hover-video,
+.col55:hover .hover-video {
+  display: block; /* Shows the video on hover */
+}
+.col1 {
+  margin: 5px;
+  border: double 1px;
+  border-radius: 10px;
+  background-color: #8f2528;
+}
+
+.col2 {
+  margin: 5px;
+  border: double 1px;
+  border-radius: 10px;
+  color: black;
+  background-color: #f4ed7b;
+}
+
+.col3 {
+  margin: 5px;
+  border: double 1px;
+  border-radius: 10px;
+  color: black;
+  background-color: #99bbe1;
+}
+
+.col4 {
+  margin: 5px;
+  border: double 1px;
+  border-radius: 10px;
+  color: black;
+  background-color: #1c1769;
+}
+
+.col5 {
+  margin: 5px;
+  border: double 1px;
+  border-radius: 10px;
+  color: black;
+  background-color: #faebd7;
+}
+.col55 {
+  margin: 5px;
+  border: double 1px;
+  border-radius: 10px;
+  color: black;
+  background-color: #4a0d0d;
+}
+
+h2 {
+  font-family: "DM Sans";
+  font-weight: 350;
+  font-size: 19px;
+}
+h3 {
+  font-family: "DM Sans";
+  font-weight: 320;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.grid_1-1,
+.grid_1-1-1 {
+  margin: 10px;
+}
+
+.videre h2 {
+  display: inline-block;
+  border: solid black;
+  border-radius: 10px;
+  padding: 7px;
+  background-color: #c1d4eb;
+  font-size: 28px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.videre h2:hover {
+  background-color: #87b2e3;
+  padding: 10px;
+}
+
+.videre {
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  width: 10%;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+  .footer h4:hover {
+    font-size: 20.5px;
+  }
+
+  h2 {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .index h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 30px;
+    left: 1px;
+    word-spacing: 1px;
+  }
+}

@@ -1,0 +1,389 @@
+body {
+  margin: 0px;
+}
+
+main {
+  margin-bottom: 50px;
+}
+
+.pil {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 10px;
+}
+
+.virksomhed img,
+.emnesite img,
+.førstesite img,
+.tema1 img,
+.spilsite img,
+.virksomhed img,
+.ommig img {
+  width: 100%;
+}
+
+.førstesite,
+.emnesite,
+.spilsite,
+.virksomhed {
+  margin: 30px;
+}
+
+.ommig main {
+  margin: 30px;
+}
+
+.index h3 {
+  margin: 20px;
+}
+.førstesite video {
+  border: none;
+}
+
+video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-bottom: solid 1px;
+}
+
+.logo {
+  width: 100px;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  text-align: center;
+}
+
+.grid_1-1 img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+.grid_1-1-1 {
+  display: none;
+  gap: 10px;
+  text-align: center;
+}
+
+.grids_1-1-1 img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 300px;
+}
+.grids_1-1-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  overflow: hidden;
+}
+
+.header_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  top: 0;
+  z-index: 10;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 10px;
+}
+
+.header_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  top: 0;
+  z-index: 10;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  justify-items: center;
+  border-bottom: solid 1px;
+}
+
+footer {
+  padding-bottom: 0px;
+  font-size: 17px;
+  background-color: #ffffff;
+  border: solid 0.5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.footer img {
+  width: 24px;
+  height: auto;
+}
+
+button {
+  border: solid 1px;
+  display: inline;
+  padding: 10px;
+  background-color: #99bbe1;
+  color: black;
+  font-size: 23px;
+  font-family: "Cormorant Garamond", serif;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #7e9fc4;
+  color: white;
+  border-color: black;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#burger-toggle {
+  display: none;
+}
+
+#burger-toggle:checked + label + nav ul {
+  display: block;
+  font-size: 25px;
+}
+
+.burger-menu {
+  display: block;
+  font-size: 35px;
+  margin-top: 5px;
+  color: rgb(0, 0, 0);
+}
+
+nav ul {
+  display: none;
+  position: fixed;
+  background-color: #99bbe1;
+  padding: 20px;
+  z-index: 1000;
+  right: 0px;
+  left: 0px;
+  text-align: center;
+  top: 57px;
+  bottom: 0px;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+}
+
+nav a:hover {
+  font-size: 20.5px;
+  color: black;
+}
+
+nav a {
+  color: black;
+  font-family: "Cormorant Garamond", serif;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 6px;
+  transition: color 0.5s ease, transform 0.5s ease;
+  line-height: 60px;
+}
+.video iframe {
+  width: 330px;
+  height: 216px;
+}
+
+@media (min-width: 1024px) {
+  button {
+    font-size: 27px;
+  }
+
+  .index h3 {
+    margin: 20px;
+
+    margin-left: 330px;
+    margin-right: 330px;
+  }
+
+  .grid_1-1 {
+    display: none;
+  }
+
+  .grids_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    gap: 100px;
+    border: solid 1px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    line-height: 42px;
+  }
+
+  .emnesite .grids_1-1 {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .grids_1-1 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 45px;
+    gap: 45px;
+  }
+
+  .grid_1-1-1 img {
+    width: 100%;
+  }
+
+  .grids_1-1-1 img {
+    height: 500px;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+  .grids_1-1-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .grids_1-1-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+  }
+
+  nav {
+    position: relative;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    gap: 70px;
+    padding: 0px;
+  }
+
+  nav a:hover {
+    color: #99bbe1;
+  }
+
+  .header_1-1-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .index h1 {
+    display: none;
+  }
+
+  .index video {
+    display: none;
+  }
+
+  .video iframe {
+    width: 800px;
+    height: 416px;
+  }
+
+  nav a {
+    color: black;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.5s ease, transform 0.5s ease;
+    background-color: transparent;
+  }
+
+  nav a:hover {
+    color: #99bbe1;
+    background-color: transparent;
+  }
+  .burger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  .logo {
+    width: 180px;
+  }
+
+  .footer img {
+    width: 44px;
+    height: auto;
+  }
+  footer img:hover {
+    width: 46px;
+  }
+
+  .pil {
+    padding: 50px;
+  }
+
+  .pil div {
+    text-align: center;
+  }
+
+  .pil img {
+    width: 50%;
+  }
+  .førstesite,
+  .emnesite,
+  .virksomhed,
+  .spilsite {
+    margin: 30px;
+  }
+
+  .ommig .grids_1-1 {
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .ommig .grids_1-1 img {
+    width: 70%;
+  }
+
+  .virksomhedgrid .grids_1-1 {
+    grid-template-columns: 2fr 1fr;
+  }
+}
