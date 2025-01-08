@@ -37,6 +37,10 @@ main {
 .index h3 {
   margin: 20px;
 }
+
+.index a {
+  color: #7e9fc4;
+}
 .førstesite video {
   border: none;
 }
@@ -140,6 +144,10 @@ button {
   font-family: "Cormorant Garamond", serif;
   cursor: pointer;
   border-radius: 10px;
+}
+
+button a {
+  color: black;
 }
 
 button:hover {

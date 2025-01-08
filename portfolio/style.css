@@ -88,8 +88,8 @@ h4 {
 .col4,
 .col5,
 .col55 {
-  position: relative; /* Ensure the parent is a positioning context */
-  overflow: hidden; /* Prevents overflow from breaking layout */
+  position: relative;
+  overflow: hidden;
 }
 
 .col1 .static-img,
@@ -98,11 +98,11 @@ h4 {
 .col4 .static-img,
 .col5 .static-img,
 .col55 .static-img {
-  display: block; /* Image is visible by default */
+  display: block;
   width: 100%;
   height: auto;
-  position: relative; /* Image stays within parent */
-  z-index: 1; /* Ensure the image is above the video by default */
+  position: relative;
+  z-index: 1;
 }
 
 .col1 .hover-video,
@@ -111,14 +111,14 @@ h4 {
 .col4 .hover-video,
 .col5 .hover-video,
 .col55 .hover-video {
-  display: none; /* Hidden by default */
-  position: absolute; /* Video overlaps the image */
+  display: none;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Maintain aspect ratio */
-  z-index: 2; /* Video sits above the image on hover */
+  object-fit: cover;
+  z-index: 2;
 }
 
 .col1:hover .static-img,
@@ -127,7 +127,7 @@ h4 {
 .col4:hover .static-img,
 .col5:hover .static-img,
 .col55:hover .static-img {
-  display: none; /* Hides the image on hover */
+  display: none;
 }
 
 .col1:hover .hover-video,
@@ -136,7 +136,7 @@ h4 {
 .col4:hover .hover-video,
 .col5:hover .hover-video,
 .col55:hover .hover-video {
-  display: block; /* Shows the video on hover */
+  display: block;
 }
 .col1 {
   margin: 5px;
